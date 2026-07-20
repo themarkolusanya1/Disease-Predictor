@@ -1,1 +1,1 @@
-# G1-healthcare-capstone
+# Disease Predictor
