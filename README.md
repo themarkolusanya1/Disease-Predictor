@@ -47,8 +47,8 @@ The model is tailored to detect and predict the following 20 diseases:
 
 ## 📋 Team Tasks & Progress
 
-- [ ] **Data Filtering:** Import, load, and filter datasets down to the 20 target diseases.
-- [ ] **Data Cleaning:** Handle missing values, duplicate entries, and symptom name formatting.
+- [x] **Data Filtering:** Import, load, and filter datasets down to the 20 target diseases.
+- [x] **Data Cleaning:** Handle missing values, duplicate entries, and symptom name formatting.
 - [ ] **Exploratory Data Analysis (EDA):** Analyze symptom frequency, correlation matrices, and distribution.
 - [ ] **Data Preprocessing:** Encode categorical symptom inputs and split data into train/test sets.
 - [ ] **Model Training & Evaluation:** Train classifier models (e.g., Random Forest, Naive Bayes) and evaluate performance (Accuracy, F1-Score).
