@@ -28,20 +28,20 @@ The model is tailored to detect and predict the following 20 diseases:
 4. **AIDS (HIV)**
 5. **Gastroenteritis**
 6. **Jaundice**
-7. **Dengue**
-8. **Pneumonia**
-9. **Hepatitis A**
-10. **Hepatitis B**
-11. **Hepatitis C**
-12. **Hepatitis D**
-13. **Hepatitis E**
-14. **Common Cold**
-15. **Urinary Tract Infection (UTI)**
-16. **Diabetes**
-17. **Hypertension**
-18. **Chickenpox**
-19. **Drug Reaction**
-20. **Allergy**
+7. **Pneumonia**
+8. **Common Cold**
+9. **Urinary Tract Infection (UTI)**
+10. **Diabetes**
+11. **Hypertension**
+12. **Hypoglycemia**
+13. **Chicken Pox**
+14. **Drug Reaction**
+15. **Allergy**
+16. **Bronchial Asthma**
+17. **Arthritis**
+18. **Migraine**
+19. **Heart Attack**
+20. **Paralysis (Brain Hemorrhage)**
 
 ---
 
