@@ -49,7 +49,7 @@ The model is tailored to detect and predict the following 20 diseases:
 
 - [x] **Data Filtering:** Import, load, and filter datasets down to the 20 target diseases.
 - [x] **Data Cleaning:** Handle missing values, duplicate entries, and symptom name formatting.
-- [ ] **Exploratory Data Analysis (EDA):** Analyze symptom frequency, correlation matrices, and distribution.
+- [x] **Exploratory Data Analysis (EDA):** Analyze symptom frequency, correlation matrices, and distribution.
 - [ ] **Data Preprocessing:** Encode categorical symptom inputs and split data into train/test sets.
 - [ ] **Model Training & Evaluation:** Train classifier models (e.g., Random Forest, Naive Bayes) and evaluate performance (Accuracy, F1-Score).
 - [ ] **Streamlit App Integration:** Integrate the trained model, implement the prediction interface, and display descriptions & precautions.
