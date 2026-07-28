@@ -19,6 +19,7 @@ st.info(
 )
 
 model = joblib.load("best_model.pkl")
+print(type(model))
 encoder = joblib.load("label_encoder.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 if "prediction" not in st.session_state:
