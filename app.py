@@ -145,7 +145,7 @@ if st.session_state.show_results:
 
         Department of AI & Machine Learning
 
-        Machine Learning Project • 2025
+        Machine Learning Project • 2026
 
         </center>
         """,
