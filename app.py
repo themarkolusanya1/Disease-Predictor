@@ -48,6 +48,21 @@ col1, col2, col3 = st.columns([1,2,1])
 
 with col2:
     predict = st.button("🔍 Predict Disease", use_container_width=True)
+    st.divider()
+
+st.markdown("""
+<div style="text-align:center">
+
+### Disease Predictor
+
+Developed by **CAPSTONE Group 1**
+
+Department of Healthcare Intelligence
+
+Machine Learning Project • 2026
+
+</div>
+""", unsafe_allow_html=True)
 
 if predict:
     with st.spinner("🔍 Predicting disease..."):
