@@ -13,7 +13,7 @@ precautions = pd.read_csv("precaution_Africa20.csv")
 descriptions = pd.read_csv("symptoms_Africa20.csv")
 
 st.title("🩺 Disease Predictor")
-st.caption("AI-powered disease prediction using logistic regression")
+st.caption("AI-powered disease prediction using Random Forest")
 st.info(
     "This app predicts the disease using machine learning. it is for educational purposes only and should not replace medical advice."
 )
