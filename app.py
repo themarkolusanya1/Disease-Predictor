@@ -144,7 +144,7 @@ if st.session_state.show_results:
 
         Developed by **CAPSTONE Group 1**
 
-        Department of AI & Machine Learning
+        Department of HEALTHCARE INTELLIGENCE
 
         Machine Learning Project • 2026
 
