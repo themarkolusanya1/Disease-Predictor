@@ -69,6 +69,21 @@ st.warning(
 st.info(
     "If symptoms persist, please consult a doctor for further evaluation and treatment."
 )
+st.divider()
+
+st.subheader("💬 Feedback")
+
+rating = st.slider(
+    "How would you rate this prediction?",
+    1, 5, 5
+)
+
+feedback = st.text_area(
+    "Tell us how we can improve:"
+)
+
+if st.button("Submit Feedback"):
+    st.success("✅ Thank you! Your feedback has been received.")
 if st.button("⬅️ Back"):
     st.session_state.show_results = False
     st.switch_page("app.py")
