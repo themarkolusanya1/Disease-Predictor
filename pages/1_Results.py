@@ -69,5 +69,20 @@ st.warning(
 st.info(
     "If symptoms persist, please consult a doctor for further evaluation and treatment."
 )
-if st.button("🔄 predict another disease"):
+if st.button("⬅️ Back"):
+    st.session_state.show_results = False
     st.switch_page("app.py")
+
+st.markdown("""
+<center>
+
+## Disease Predictor
+
+Developed by **CAPSTONE Group 1**
+
+Department of Healthcare Intelligence
+
+Machine Learning Project • 2026
+
+</center>
+""", unsafe_allow_html=True)
