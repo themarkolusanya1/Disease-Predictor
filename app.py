@@ -35,22 +35,26 @@ def go_to_home():
     st.session_state.page = "home"
     st.session_state.prediction_made = False
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
 # ========== 3. LOAD MODEL + DATASETS ==========
 @st.cache_resource
 def load_model():
-    return joblib.load("best_model.pkl")
+    return joblib.load(BASE_DIR / "best_model.pkl")
 
 @st.cache_resource
 def load_support_files():
-    encoder = joblib.load("label_encoder.pkl")
-    feature_columns = joblib.load("feature_columns.pkl")
+    encoder = joblib.load(BASE_DIR / "label_encoder.pkl")
+    feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
     all_symptoms = list(feature_columns)
     diseases = list(encoder.classes_)
 
     disease_info = {d: {'description': "Description not available", 'precautions': ["Consult a doctor"]} for d in diseases}
     try:
-        desc_df = pd.read_csv("symptoms_Africa20.csv")
-        prec_df = pd.read_csv("precaution_Africa20.csv")
+        desc_df = pd.read_csv(BASE_DIR / "symptoms_Africa20.csv")
+        prec_df = pd.read_csv(BASE_DIR / "precaution_Africa20.csv")
         merged_df = pd.merge(desc_df, prec_df, on='Disease', how='outer')
 
         for idx in range(len(merged_df)):
@@ -69,7 +73,7 @@ def load_support_files():
         st.warning(f"CSV Load Error: {e}. Using defaults.")
 
     try:
-        sev_df = pd.read_csv("Symptom-severity.csv")
+        sev_df = pd.read_csv(BASE_DIR / "severity_Africa20.csv")
         sev_dict = dict(zip(sev_df['Symptom'], sev_df['weight']))
     except Exception:
         sev_dict = {s: 1 for s in all_symptoms}
