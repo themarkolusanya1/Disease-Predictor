@@ -1,12 +1,12 @@
 # 🏥 CAPSTONE PROJECT FINAL REPORT
 ## AI-Powered Disease Predictor for Healthcare Intelligence
 
-**Department:** Department of Healthcare Intelligence  
-**Team:** CAPSTONE Group 1  
+**Program:** AI and Machine Learning   
+**Team:** Healthcare Intelligence
 **Project Title:** AI Disease Predictor & Symptom Checker  
 **Target Focus:** 20 Key Africa-Relevant Diseases  
 **Deployment Platform:** Streamlit Community Cloud  
-**Academic Year:** 2026  
+**Cohort:** TechCrush Cohort 7 
 
 ---
 
