@@ -216,7 +216,9 @@ def load_support_files():
             for i in range(1, 5):
                 col = f'Precaution_{i}'
                 if col in merged_df.columns and pd.notna(row[col]):
-                    precautions.append(str(row[col]))
+                    val = str(row[col]).strip()
+                    if val:
+                        precautions.append(val[0].upper() + val[1:] if len(val) > 1 else val.upper())
 
             disease_info[disease] = {'description': desc, 'precautions': precautions if precautions else ["Consult a healthcare professional."]}
     except Exception as e:
