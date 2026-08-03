@@ -217,10 +217,10 @@ def load_support_files():
                 col = f'Precaution_{i}'
                 if col in merged_df.columns and pd.notna(row[col]):
                     val = str(row[col]).strip()
-                    if val:
-                        precautions.append(val[0].upper() + val[1:] if len(val) > 1 else val.upper())
+                    if val and val.lower() != 'nan':
+                        precautions.append(val.title())
 
-            disease_info[disease] = {'description': desc, 'precautions': precautions if precautions else ["Consult a healthcare professional."]}
+            disease_info[disease] = {'description': desc, 'precautions': precautions if precautions else ["Consult A Healthcare Professional."]}
     except Exception as e:
         st.warning(f"CSV Load Warning: {e}. Default lookups active.")
 
