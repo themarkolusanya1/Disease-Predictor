@@ -245,9 +245,9 @@ if st.session_state.page == "home":
 
     with col_welcome:
         st.session_state.username = st.text_input(
-            "👤 Enter Your Name", 
+            "Enter Your Name", 
             value=st.session_state.username if st.session_state.username != "Guest" else "", 
-            placeholder="e.g. Mark"
+            placeholder="e.g. Abasifreke Udoh"
         )
         
         user_display = st.session_state.username.strip() if st.session_state.username.strip() else "Guest"
