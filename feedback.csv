@@ -9,3 +9,12 @@ timestamp,symptoms,predicted,severity,feedback,correct_disease
 2026-07-31 00:47:45,cough;vomiting;headache;abdominal_pain;belly_pain,Typhoid,5,5,Helpful,
 2026-07-31 00:47:47,cough;vomiting;headache;abdominal_pain;belly_pain,Typhoid,5,5,Helpful,
 2026-07-31 01:03:40,abdominal_pain;altered_sensorium;belly_pain;blood_in_sputum,Paralysis (brain hemorrhage),4,4,Helpful,
+2026-07-31 19:09:33,abdominal_pain;anxiety;bladder_discomfort;acidity,Urinary tract infection,4,4,Helpful,
+2026-07-31 19:09:38,abdominal_pain;anxiety;bladder_discomfort;acidity,Urinary tract infection,4,4,Not Helpful,
+2026-08-02 23:48:27,Emmanuel,altered_sensorium;bladder_discomfort;acidity;anxiety;breathlessness,Paralysis (brain hemorrhage),5,5,Helpful
+2026-08-03 00:06:13,EM,altered_sensorium;belly_pain;blurred_and_distorted_vision;bladder_discomfort,Paralysis (brain hemorrhage),4,4,Helpful
+2026-08-03 00:06:15,EM,altered_sensorium;belly_pain;blurred_and_distorted_vision;bladder_discomfort,Paralysis (brain hemorrhage),4,4,Not Helpful
+"2026-08-03 00:15:06"|"Vincent"|"abdominal_pain;anxiety;blood_in_sputum;acidity"|"Migraine"|"4"|"4"|"Helpful"|""
+"2026-08-03 01:00:59"|"Vincent"|"abdominal_pain;belly_pain;altered_sensorium;blood_in_sputum"|"Paralysis (brain hemorrhage)"|"4"|"4"|"Helpful"|""
+"2026-08-03 12:28:51"|"Vincent"|"abdominal_pain;anxiety;acidity;blood_in_sputum"|"Migraine"|"4"|"4"|"Helpful"|""
+"2026-08-03 12:28:53"|"Vincent"|"abdominal_pain;anxiety;acidity;blood_in_sputum"|"Migraine"|"4"|"4"|"Helpful"|""
