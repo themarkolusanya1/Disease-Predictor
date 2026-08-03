@@ -237,8 +237,8 @@ encoder, feature_columns, all_symptoms, all_diseases, disease_info, symptom_seve
 
 # ========== HOME PAGE ==========
 if st.session_state.page == "home":
-    st.markdown("### 🩺 AI Symptom Checker")
-    st.caption("Team Healthcare Intelligence • Capstone Project")
+    st.markdown("###  AI Symptom Checker")
+    st.caption("Team - Healthcare Intelligence | Capstone Project")
     st.divider()
 
     col_welcome, col_stats = st.columns([3, 2], gap="large")
