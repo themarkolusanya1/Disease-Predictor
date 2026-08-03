@@ -1,6 +1,6 @@
 # 🌍 Disease Predictor (AI Symptom Checker)
 
-A machine learning project designed to predict likely medical conditions from user-reported symptoms. Developed by **CAPSTONE Group 1** (Department of Healthcare Intelligence), the project focuses on **20 key diseases highly relevant to Africa**, providing quick health insights, top 3 differential diagnoses, disease descriptions, risk severity ratings, and recommended precautions via an interactive Streamlit web application.
+A machine learning project designed to predict likely medical conditions from user-reported symptoms. Developed by Team - Healthcare Intelligence, the project focuses on **20 key diseases highly relevant to Africa**, providing quick health insights, top 3 differential diagnoses, disease descriptions, risk severity ratings, and recommended precautions via an interactive Streamlit web application.
 
 ---
 
