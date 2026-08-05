@@ -10,7 +10,7 @@ from pathlib import Path
 
 # ========== 2. PAGE CONFIG + STYLING ==========
 st.set_page_config(
-    page_title="AI Symptom Checker",
+    page_title="HSC AI",
     page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -237,7 +237,7 @@ encoder, feature_columns, all_symptoms, all_diseases, disease_info, symptom_seve
 
 # ========== HOME PAGE ==========
 if st.session_state.page == "home":
-    st.markdown("###  AI Symptom Checker")
+    st.markdown("### Health Symptom Checker (HSC AI)")
     st.caption("Team - Healthcare Intelligence | Capstone Project")
     st.divider()
 
