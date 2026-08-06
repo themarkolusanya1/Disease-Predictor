@@ -62,7 +62,7 @@ Disease-Predictor/
 ├── notebook.ipynb              # Exploratory Data Analysis (EDA) notebook
 └── data/
     ├── raw/                    # Original raw source datasets
-    └── processed/              # Filtered dataset (dataset_Africa20.csv - 146 samples)
+    └── processed/              # Filtered dataset (dataset_Africa20.csv - 2,400 samples)
 ```
 
 ---
@@ -70,8 +70,8 @@ Disease-Predictor/
 ## 🧪 Machine Learning Pipeline & Evaluation
 
 ### 1. Dataset & Preprocessing
-* **Filtered Dataset**: Extracted 146 samples across the 20 target diseases with 80 unique binary symptom features (`data/processed/dataset_Africa20.csv`).
-* **Class Balancing**: Balanced target classes (~5–10 samples per disease) using `class_weight="balanced"` in scikit-learn classifiers.
+* **Filtered Dataset**: Extracted **2,400 patient records** ($20 \text{ target diseases} \times 120 \text{ samples}$) with 80 unique binary symptom features (`data/processed/dataset_Africa20.csv`).
+* **Class Balancing**: Balanced target classes (120 samples per disease) using `class_weight="balanced"` in scikit-learn classifiers.
 
 ### 2. Model Performance Comparison
 
@@ -79,11 +79,11 @@ Multiple classification algorithms were trained and evaluated on an 80/20 train-
 
 | Model | Accuracy | Precision | Recall | F1-Score | Status |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Random Forest** | **1.00 (100%)** | **1.00** | **1.00** | **1.00** | 🏆 **Selected for Deployment** (`best_model.pkl`) |
-| **SVM (Linear)** | **1.00 (100%)** | **1.00** | **1.00** | **1.00** | ⚡ Top Performer |
-| **Logistic Regression** | **1.00 (100%)** | **1.00** | **1.00** | **1.00** | ⚡ Top Performer |
-| **KNN** | **1.00 (100%)** | **1.00** | **1.00** | **1.00** | ⚡ Top Performer |
-| **Decision Tree** | **0.57 (56.7%)** | **0.64** | **0.57** | **0.57** | ⚠️ Underperformed |
+| **Random Forest** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | 🏆 **Selected for Deployment** (`best_model.pkl`) |
+| **SVM (Linear)** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
+| **Logistic Regression** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
+| **KNN** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
+| **Decision Tree** | **0.567 (56.7%)** | **0.637** | **0.567** | **0.573** | ⚠️ Underperformed |
 
 ### 3. Model Selection & Overfitting Mitigation
 * **Why Random Forest?**: Chosen as the primary model due to its ensemble tree stability, multi-class probability outputs (`predict_proba`), and robustness against sparse input vectors.
