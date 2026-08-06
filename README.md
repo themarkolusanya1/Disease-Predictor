@@ -83,7 +83,7 @@ Multiple classification algorithms were trained and evaluated on an 80/20 train-
 | **SVM (Linear)** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
 | **Logistic Regression** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
 | **KNN** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
-| **Decision Tree** | **0.567 (56.7%)** | **0.637** | **0.567** | **0.573** | ⚠️ Underperformed |
+| **Decision Tree** | **0.930 (93.0%)** | **0.932** | **0.930** | **0.928** | ⚠️ Baseline Benchmark |
 
 ### 3. Model Selection & Overfitting Mitigation
 * **Why Random Forest?**: Chosen as the primary model due to its ensemble tree stability, multi-class probability outputs (`predict_proba`), and robustness against sparse input vectors.

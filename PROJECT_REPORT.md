@@ -110,7 +110,7 @@ Five classification algorithms were trained on an 80/20 train-test split (1,920 
 | **Support Vector Machine (SVM)** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
 | **Logistic Regression** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
 | **K-Nearest Neighbors (KNN)** | **1.000 (100%)** | **1.000** | **1.000** | **1.000** | ⚡ Top Performer |
-| **Decision Tree Classifier** | **0.567 (56.7%)** | **0.637** | **0.567** | **0.573** | ⚠️ Baseline Benchmark |
+| **Decision Tree Classifier** | **0.930 (93.0%)** | **0.932** | **0.930** | **0.928** | ⚠️ Baseline Benchmark |
 
 ### 4.3 Rationale for Model Selection
 **Random Forest** (`n_estimators=100`, `class_weight="balanced"`) was chosen for production deployment over linear SVM and Logistic Regression because:
